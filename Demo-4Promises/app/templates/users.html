@@ -1,0 +1,24 @@
+<div ng-controller="userCtrl">
+    <input type="text" ng-model="searchCriteria"
+           placeholder="Search users"
+           class="form-control"/>
+<table class="table table-hover" >
+    <caption>Twitter Users</caption>
+    <thead>
+    <tr>
+        <th>S.No</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone Number</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="user in users|filter:{phone:searchCriteria}">
+        <td>{{$index}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.email|uppercase}}</td>
+        <td>{{user.phone|phoneFormatter:'US'}}</td>
+    </tr>
+    </tbody>
+</table>
+</div>
