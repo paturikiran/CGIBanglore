@@ -17,7 +17,7 @@
         <td>{{$index}}</td>
         <td>{{user.name}}</td>
         <td>{{user.email|uppercase}}</td>
-        <td>{{user.phone}}</td>
+        <td>{{user.phone|phoneFormatter:'US'}}</td>
     </tr>
     </tbody>
 </table>
