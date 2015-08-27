@@ -13,7 +13,7 @@
     </tr>
     </thead>
     <tbody>
-    <tr ng-repeat="user in users|filter:searchCriteria">
+    <tr ng-repeat="user in users|filter:{phone:searchCriteria}">
         <td>{{$index}}</td>
         <td>{{user.name}}</td>
         <td>{{user.email|uppercase}}</td>
