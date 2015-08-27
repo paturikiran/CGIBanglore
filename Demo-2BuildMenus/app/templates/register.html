@@ -1,1 +1,8 @@
-iam the reigste
+<div ng-controller="registerCtrl">
+    <label>
+        Select your City
+    </label>
+    <select ng-model="selectedCity" ng-change="handleChange()"
+            ng-options="location.city group by location.state for
+            location in cities"></select>
+</div>
