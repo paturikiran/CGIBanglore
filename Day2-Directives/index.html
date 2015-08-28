@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="Content/css/bootstrap.min.css" rel="stylesheet">
+    <link href="Content/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <script src="vendor/jquery-2.1.4.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="vendor/bootstrap.min.js"></script>
+    <script src="vendor/angular.min.js"></script>
+</head>
+<body ng-app="custom.directives">
+
+<div ng-controller="employeeCtrl">
+    <pre>{{employees|json}}</pre>
+    <div custom-table
+         headings="tableHeaders"
+            data="employees"
+            edit="editEmployee()"></div>
+</div>
+<script src="app/app.js"></script>
+<script src="app/Grid/grid.js"></script>
+<script src="app/Grid/gridLabel.js"></script>
+<script src="app/employees/employees.js"></script>
+</body>
+</html>

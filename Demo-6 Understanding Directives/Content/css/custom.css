@@ -1,0 +1,23 @@
+ my-card-with-transclude {
+    display: block;
+    border: 1px solid #555;
+    padding: 5px;
+}
+ my-card-with-transclude .pic {
+    float: right;
+    max-width: 100px;
+}
+
+ my-card{
+     display: block;
+     border: 1px solid #555;
+     padding: 5px;
+ }
+my-card .pic {
+    float: right;
+    max-width: 100px;
+
+}
+.content{
+
+}

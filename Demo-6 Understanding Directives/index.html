@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Hello CGI</title>
+    <link href="Content/css/bootstrap.css" rel="stylesheet">
+    <link href="Content/css/bootstrap-theme.css" rel="stylesheet">
+    <link href="Content/css/custom.css" rel="stylesheet">
+    <script src="vendor/angular.min.js"></script>
+</head>
+<body ng-app="cgiTwitter">
+<my-card my-title="'MyApp'"
+         my-pic="'http://teropa.info/ilfracombe.jpg'"
+         my-content="Hello i am the content">
+</my-card>
+
+<my-card-with-transclude my-title="'MyApp'"
+
+                         my-pic="'http://teropa.info/ilfracombe.jpg'">
+
+    <span>Hello i am the transcluded content</span>
+</my-card-with-transclude>
+
+<script src="app/app.js"></script>
+<script src="app/directives/customCard.js"></script>
+
+</body>
+</html>

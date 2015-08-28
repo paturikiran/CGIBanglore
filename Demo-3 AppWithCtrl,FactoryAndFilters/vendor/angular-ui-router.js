@@ -676,8 +676,8 @@ function UrlMatcher(pattern, config) {
   //   '{' name ':' regexp '}'
   // The regular expression is somewhat complicated due to the need to allow curly braces
   // inside the regular expression. The placeholder regexp breaks down as follows:
-  //    ([:*])(\w+)               classic placeholder ($1 / $2)
-  //    \{(\w+)(?:\:( ... ))?\}   curly brace placeholder ($3) with optional regexp ... ($4)
+  //    ([:*])(\widgets+)               classic placeholder ($1 / $2)
+  //    \{(\widgets+)(?:\:( ... ))?\}   curly brace placeholder ($3) with optional regexp ... ($4)
   //    (?: ... | ... | ... )+    the regexp consists of any number of atoms, an atom being either
   //    [^{}\\]+                  - anything other than curly braces or backslash
   //    \\.                       - a backslash escape
